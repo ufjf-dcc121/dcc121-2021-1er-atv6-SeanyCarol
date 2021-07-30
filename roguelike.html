@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roguelike</title>
-  <style>
-    td {
-      height: 30px;
-      width: 30px;
-      background-color: brown;
-    }
-    #heroi {
-      color: lightblue;
-    }
-    .orc{
-      color: lightgreen;
-    }
-    .tesouro{
-      color: gold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roguelike</title>
+    <style>
+        td {
+            height: 30px;
+            width: 30px;
+            background-color: brown;
+        }
+
+        #heroi {
+            color: lightblue;
+        }
+
+        .orc {
+            color: lightgreen;
+        }
+
+        .tesouro {
+            color: gold;
+        }
+
+        .parede {
+            font-size: 0px;
+            background-color: gray;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Roguelike</h1>
+    <h1>Roguelike</h1>
     <table>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -48,6 +58,31 @@
             <td></td>
         </tr>
         <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -56,13 +91,10 @@
             <td></td>
             <td></td>
             <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -70,6 +102,8 @@
             <td></td>
         </tr>
         <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -79,34 +113,10 @@
             <td></td>
             <td></td>
             <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -114,6 +124,8 @@
             <td></td>
         </tr>
         <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -123,21 +135,19 @@
             <td></td>
             <td></td>
             <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -147,6 +157,94 @@
             <td class="tesouro">D</td>
             <td></td>
             <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td class="orc">O</td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="orc">O</td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -159,11 +257,119 @@
         </tr>
         <tr>
             <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="parede"></td>
+        </tr>
+        <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -176,193 +382,19 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td class="orc">O</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -375,96 +407,75 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td class="parede"></td>
         </tr>
         <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td class="orc">O</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="orc">O</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td class="tesouro">T</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
         </tr>
         <tr>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
+            <td class="parede"></td>
         </tr>
     </table>
 </body>
+
 </html>
