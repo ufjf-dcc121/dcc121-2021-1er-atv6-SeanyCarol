@@ -481,7 +481,9 @@
 
         for(let c = 0; c < celulas.length - 1; c++) {
             let celula = celulas[c];
-            celula.classList.add('parede');
+            if(celula.classList.length === 0) {
+                celula.classList.add('parede');
+            }
         }
     </script>
 </body>
