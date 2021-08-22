@@ -484,6 +484,13 @@
             if(celula.classList.length === 0) {
                 celula.classList.add('parede');
             }
+
+            celula.addEventListener('click', mostraClasse, false);
+        }
+
+        function mostraClasse(event) {
+            let celula = event.target;
+            console.log(celula.classList.value);
         }
     </script>
 </body>
