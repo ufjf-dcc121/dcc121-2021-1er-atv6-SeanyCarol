@@ -490,7 +490,7 @@
 
         function trocaClasse(event) {
             let celula = event.target;
-            console.log(celula.classList.value);
+            console.log("Classe anterior: ", celula.classList.value);
 
             if(celula.classList.contains("parede")) {
                 celula.classList.remove("parede");
@@ -507,6 +507,8 @@
                 celula.classList.add("parede"); 
                 celula.innerText = '';             
             }
+
+            console.log("Classe atual: ", celula.classList.value);
         }
     </script>
 </body>
