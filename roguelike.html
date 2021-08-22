@@ -485,12 +485,28 @@
                 celula.classList.add('parede');
             }
 
-            celula.addEventListener('click', mostraClasse, false);
+            celula.addEventListener('click', trocaClasse, false);
         }
 
-        function mostraClasse(event) {
+        function trocaClasse(event) {
             let celula = event.target;
             console.log(celula.classList.value);
+
+            if(celula.classList.contains("parede")) {
+                celula.classList.remove("parede");
+                celula.innerText = '';
+            } else if(celula.classList.length === 0) {
+                celula.classList.add("orc");
+                celula.innerText = 'O';
+            } else if(celula.classList.contains("orc")) {
+                celula.classList.remove("orc");
+                celula.classList.add("tesouro");
+                celula.innerText = 'T';
+            } else if(celula.classList.contains("tesouro")) {                
+                celula.classList.remove("tesouro");  
+                celula.classList.add("parede"); 
+                celula.innerText = '';             
+            }
         }
     </script>
 </body>
